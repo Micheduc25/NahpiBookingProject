@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-header {
+  width: 100%;
+}
+.page-header .page-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.page-header .page-navigation div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.page-header .page-navigation div:nth-child(1) .bus-ticket {
+  margin-right: 50px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.page-header .page-navigation div:nth-child(1) .bus-ticket span {
+  color: teal;
+}
+.page-header .page-navigation div:nth-child(1) .menuIcon {
+  color: black;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.page-header .page-navigation div:nth-child(1) .menuIcon svg {
+  height: 30px;
+  width: 30px;
+}
+.page-header .page-navigation div:nth-child(2) {
+  height: 100%;
+}
+.page-header .page-navigation div:nth-child(2) button {
+  border: none;
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.page-header .page-navigation div:nth-child(2) button:hover {
+  background: rgba(0, 0, 0, 0.247);
+}
+
+.page-body {
+  background: #ccc;
+  display: flex;
+  width: 100%;
+}
+.page-body .main-section {
+  width: 82%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+@media (max-width: 700px) {
+  .page-body .main-section {
+    width: 100%;
+    margin: auto;
+    margin-left: 0;
+  }
+}
+.page-body .main-section .title {
+  width: 100%;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.page-body .main-section .content {
+  background: white;
+  padding: 10px;
+  width: 100%;
+}
+.page-body .main-section .content table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+.page-body .main-section .content table td {
+  padding: 10px 5px;
+}
+.page-body .main-section .content table tbody tr:nth-child(even) {
+  background: #ccc;
+}
+.page-body .main-section .content table td {
+  text-align: left;
+}
+.page-body .main-section .content table td button {
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.page-body .main-section .content table td button:hover {
+  background: #015f5f;
+}
+.page-body .main-section .content table td button:first-child {
+  background: orange;
+}
+.page-body .main-section .content table td button:first-child:hover {
+  background: #db8f02;
+}
+.page-body .main-section .content table td button:last-child {
+  background: red;
+}
+.page-body .main-section .content table td button:last-child:hover {
+  background: #cc0101;
+}
+.page-body .main-section .content table th {
+  text-align: left;
+  padding: 10px 5px;
+}
+.page-body .main-section .content table thead tr {
+  background: #ccc;
+}
+
+/*# sourceMappingURL=bookingSeat.css.map */

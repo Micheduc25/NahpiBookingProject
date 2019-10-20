@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-body {
+  display: flex;
+  background: #ccc;
+}
+.page-body .main-section {
+  width: 85%;
+}
+.page-body .main-section .title {
+  font-size: 30px;
+  margin: 30px auto 50px auto;
+  width: 95%;
+}
+.page-body .main-section .content {
+  width: 95%;
+  margin: auto;
+}
+.page-body .main-section .content div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.page-body .main-section .content input {
+  width: 100%;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+}
+.page-body .main-section .content input[type=submit] {
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  transition: 0.2s;
+}
+.page-body .main-section .content input[type=submit]:hover {
+  background-color: #016161;
+}
+.page-body .main-section .content input[type=text] {
+  border: 1px solid #bbb;
+}
+.page-body .main-section .content .route-name {
+  position: relative;
+}
+.page-body .main-section .content .route-name .suggestions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.308);
+}
+.page-body .main-section .content .route-name .suggestions .sugg-item {
+  padding: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: 0;
+}
+.page-body .main-section .content .route-name .suggestions .sugg-item:hover {
+  background: #ccc;
+}
+
+.hideSug {
+  display: none;
+}
+
+/*# sourceMappingURL=newRoute.css.map */

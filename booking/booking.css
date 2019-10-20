@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-body {
+  margin-top: 40px;
+}
+.page-body .booking-form {
+  width: 40%;
+  margin: auto;
+}
+@media (max-width: 930px) {
+  .page-body .booking-form {
+    width: 60%;
+  }
+}
+@media (max-width: 630px) {
+  .page-body .booking-form {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .page-body .booking-form {
+    width: 95%;
+  }
+}
+.page-body .booking-form > div {
+  width: 100%;
+}
+.page-body .booking-form > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.page-body .booking-form > div div {
+  width: 100%;
+}
+.page-body .booking-form > div div input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+}
+.page-body .booking-form .submit input[type=submit] {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.page-body .booking-form .submit input[type=submit]:hover {
+  background-color: #02a002;
+}
+
+/*# sourceMappingURL=booking.css.map */

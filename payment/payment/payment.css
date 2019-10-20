@@ -1,0 +1,127 @@
+body{
+			margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+			
+			
+		}
+		.header{
+			width:1100px;
+			height:220px;
+			margin:auto; 
+		}
+		.nav{
+			width:auto;
+			background-color:darkslategrey;
+			margin:auto;
+			overflow:auto;
+		}
+		ul{
+			float:right;
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		li{
+			float:left;
+		}
+		.nav a:link,.nav a:visited{
+            transition:.2s;
+			color: aliceblue;
+			width:124px;
+			padding:15px;
+			display:block;
+			text-transform:uppercase;
+			font-size:14px;
+			font-family:sans-serif;
+			text-decoration:none;
+		}
+		.nav a:hover{
+			color:yellow;
+		}
+		button{
+	background-color:lightcoral;
+	margin:0;
+	padding:0;
+	width:150px;
+	border-radius: 5px;
+	display: inline-block;
+    color:white;
+    cursor: pointer;
+    transition:.2s;
+		 
+		  
+        }
+
+        button:hover{
+            background:rgb(247, 151, 151) ;
+        }
+        
+        
+    
+        #main{
+            margin-top:40px;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .item{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+
+        .item img{
+            width:300px;
+            height: 300px;
+        }
+
+        .item a:link, .item a:visited{
+            text-decoration: none;
+            display: block;
+            padding:20px 30px;
+            border:1px solid #ccc;
+            margin-top:20px;
+            border-radius:5px;
+             background:dodgerblue;
+             color:white;
+             transition:.2s;
+
+        }
+
+        .title{
+            font-size: 30px;
+            text-align:center;
+            margin-bottom: 30px;
+            margin-top:50px;
+            font-weight: bold;
+        }
+
+        .item a:hover{
+            background:rgb(79, 163, 247);
+        }
+
+        form{
+            margin-top:20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group input{
+            border:1px solid #ccc;
+            padding:20px;
+            width:400px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        form button{
+            border:none;
+            width:200px;
+            padding:20px;
+            
+        }

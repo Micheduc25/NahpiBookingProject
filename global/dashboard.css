@@ -1,0 +1,100 @@
+.dashboard {
+  transition: transform 0.3s ease-in;
+  width: 18%;
+  padding: 0 5px 0 10px;
+  background: #001b44;
+  color: #ccc;
+  height: auto;
+  min-height: 100vh;
+}
+@media (max-width: 700px) {
+  .dashboard {
+    position: absolute;
+    z-index: 4;
+    width: auto;
+    min-height: 100%;
+  }
+}
+.dashboard .dashboard-navigation-title {
+  padding: 20px 0;
+}
+.dashboard .dashboard-items .dashboard-item a:link, .dashboard .dashboard-items .dashboard-item a:visited {
+  width: 100%;
+  color: #ccc;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 1px solid transparent;
+}
+.dashboard .dashboard-items .dashboard-item a:link:hover, .dashboard .dashboard-items .dashboard-item a:visited:hover {
+  border-bottom: 1px solid #ccc;
+}
+.dashboard .dashboard-items .dashboard-item a:link div:nth-child(1), .dashboard .dashboard-items .dashboard-item a:visited div:nth-child(1) {
+  display: flex;
+}
+.dashboard .dashboard-items .dashboard-item a:link div:nth-child(1) .icon, .dashboard .dashboard-items .dashboard-item a:visited div:nth-child(1) .icon {
+  margin-right: 10px;
+}
+.dashboard .dashboard-items .dashboard-item a:link .more, .dashboard .dashboard-items .dashboard-item a:visited .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-10px);
+}
+.dashboard .dashboard-items .website-management {
+  width: 100%;
+  padding: 10px;
+  background: skyblue;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+.dashboard .dashboard-items .website {
+  margin-top: 10px;
+}
+.dashboard .dashboard-items .website a:link, .dashboard .dashboard-items .website a:visited {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.dashboard .dashboard-items .website a:link:hover, .dashboard .dashboard-items .website a:visited:hover {
+  color: white;
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.hide {
+  transform: translateX(-100%);
+}
+
+.moveLeft {
+  transform: translateX(-18%);
+  transition: 0.3s ease-in;
+}
+
+.active{
+  background:teal;
+  color:white !important;
+}
+@media (max-width: 700px) {
+  .moveLeft {
+    transform: translateX(0);
+  }
+}
+
+.moveRight {
+  transform: translateX(0);
+  transition: 0.3s ease-in;
+}
+@media (max-width: 700px) {
+  .moveRight {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=dashboard.css.map */

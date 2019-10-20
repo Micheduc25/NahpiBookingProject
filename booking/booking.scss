@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+.page-body{
+    margin-top:40px;
+    
+
+
+    .booking-form{
+        width:40%;
+        margin:auto;
+        @media(max-width:930px){
+            width:60%;
+        }
+
+        @media(max-width:630px){
+            width:80%;
+        }
+
+        @media(max-width:400px){
+            width:95%;
+        }
+
+        >div{
+            width:100%;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            div{
+                width:100%;
+
+                input{
+                    width:100%;
+                    border:1px solid #ccc;
+                    padding:10px;
+                    font-size: 18px;;
+                }
+
+                
+            }
+
+           
+        }
+
+         .submit{
+                input[type=submit]{
+                    border:none;
+                    width:100%;
+                    padding:10px;
+                    color:white;
+                    background-color:green;
+                    border-radius:3px;
+                    cursor:pointer;
+                    transition:background-color .2s;
+
+                    &:hover{
+                        background-color:rgb(2, 160, 2);
+                    }
+                }
+            }
+
+
+    }
+}

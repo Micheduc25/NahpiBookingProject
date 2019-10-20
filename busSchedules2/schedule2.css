@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-body {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+  min-height: 60vh;
+}
+.page-body .title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page-body .upper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.page-body .upper .next div:first-child {
+  font-size: 14px;
+}
+.page-body .upper .next div a:link, .page-body .upper .next div a:visited {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+  background: green;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+}
+.page-body .bus-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.page-body .bus-layout div {
+  color: white;
+  background-color: teal;
+  padding: 20px 0;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.page-body .bus-layout div:hover {
+  background-color: #05acac;
+}
+.page-body .bus-layout div.selected {
+  background-color: red;
+}
+
+.account {
+  position: relative;
+  display: block;
+}
+.account > div.account-drop-down {
+  display: none;
+  background: white;
+  position: absolute;
+  top: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.account > div.account-drop-down > div a {
+  color: black !important;
+}
+.account > div.account-drop-down > div a:hover {
+  color: white !important;
+}
+.account > div.account-drop-down.show {
+  display: block;
+}
+
+.space-out {
+  margin-left: 40px;
+}
+
+/*# sourceMappingURL=schedule2.css.map */

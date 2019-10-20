@@ -1,0 +1,63 @@
+.page-header{
+    
+    width:100%;
+
+    .page-navigation{
+        // padding:5px 5px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top:1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+
+        div:nth-child(1){
+            display:flex;
+            align-items: center;
+
+            .bus-ticket{
+                margin-right:50px;
+                margin-left:20px;
+                font-size: 30px;
+
+                span{
+                    color:teal;
+
+                }
+            }
+
+            .menuIcon{
+                color:black;
+                width:30px;
+                height: 30px;
+                cursor:pointer;
+
+                svg{
+                    height: 30px;
+                    width:30px;
+                }
+                
+            }
+        }
+
+        div:nth-child(2){
+            height: 100%;
+
+            button{
+                border:none;
+
+                background:white;
+                color:black;
+                border:1px solid #ddd;
+                padding:20px;
+                cursor:pointer;
+                transition:.3s;
+
+                &:hover{
+                    background:rgba(0, 0, 0, 0.247);
+                }
+
+            }
+
+        }
+    }
+}

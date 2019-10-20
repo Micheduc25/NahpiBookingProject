@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-body {
+  background: #ccc;
+  display: flex;
+}
+.page-body .main-section {
+  padding-left: 30px;
+}
+.page-body .main-section .title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.page-body .main-section .content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.page-body .main-section .content .card {
+  margin-bottom: 20px;
+  width: 230px;
+  margin-right: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.247);
+}
+.page-body .main-section .content .card .card-up {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.page-body .main-section .content .card .card-up .card-up__left {
+  font-size: 60px;
+}
+.page-body .main-section .content .card .card-up .card-up__right {
+  text-align: right;
+  font-size: 14px;
+}
+.page-body .main-section .content .card .card-down {
+  color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+}
+
+.blue {
+  background: dodgerblue;
+}
+
+.teal {
+  background: teal;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

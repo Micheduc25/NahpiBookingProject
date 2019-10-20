@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.page-header{
+    
+    width:100%;
+
+    .page-navigation{
+        // padding:5px 5px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top:1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+
+        div:nth-child(1){
+            display:flex;
+            align-items: center;
+
+            .bus-ticket{
+                margin-right:50px;
+                margin-left:20px;
+                font-size: 30px;
+
+                span{
+                    color:teal;
+
+                }
+            }
+
+            .menuIcon{
+                color:black;
+                width:30px;
+                height: 30px;
+                cursor:pointer;
+
+                svg{
+                    height: 30px;
+                    width:30px;
+                }
+                
+            }
+        }
+
+        div:nth-child(2){
+            height: 100%;
+
+            button{
+                border:none;
+
+                background:white;
+                color:black;
+                border:1px solid #ddd;
+                padding:20px;
+                cursor:pointer;
+                transition:.3s;
+
+                &:hover{
+                    background:rgba(0, 0, 0, 0.247);
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.page-body{
+    background:#ccc;
+    display: flex;
+
+    width:100%;
+    .main-section{
+        width:82%;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        margin-left:20px;
+        @media(max-width:700px){
+        width:100%;
+        margin:auto;
+        margin-left:0;
+    }
+
+        .title{
+            width:100%;
+            font-size: 30px;
+            text-align:left;
+            margin-bottom: 40px;
+            margin-top:20px;
+        }
+
+        .content{
+
+            background:white;
+            padding:10px;
+            width:100%;
+        table{
+            width:100%;
+            font-size: 13px;
+            border-collapse: collapse;
+            
+
+            td{
+                padding:10px 5px;
+            }
+            
+            
+    tbody{
+        tr:nth-child(even){
+                background: #ccc;
+
+            }
+
+
+
+            }
+            td{
+                text-align: left;
+
+                button{
+                    border:none;
+                    background-color:rgb(0, 66, 128);
+                    color:white;
+                    padding:5px;
+                    border-radius:3px;
+                    cursor:pointer;
+                    transition:.2s;
+
+                    &:hover{
+                        background:rgb(1, 53, 95);
+                    }
+
+                    &:last-child{
+                        background:red;
+                        &:hover{
+                            background:rgb(204, 1, 1);
+                        }
+                    }
+                }
+               
+                
+            }
+            th{
+                text-align: left;
+                 padding:10px 5px;
+
+            }
+
+            thead{
+                tr{
+                    background:#ccc;
+                }
+            }
+
+
+        }
+
+        }
+        
+    }
+}
+

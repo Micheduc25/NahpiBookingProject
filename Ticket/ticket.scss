@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+}
+
+.ticket-body{
+    padding:30px;
+    border:2px solid black;
+    width:70%;
+    background: rgb(247, 246, 246);
+
+    .heading{
+        display:flex;
+        margin-bottom: 20px;
+        justify-content: space-around;
+        span:nth-child(1){
+            background-image: url(./adminbg.jpg);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            font-size: 40px;
+            font-family: comic sans ms;
+            color:transparent;
+            background-position: center;
+        }
+
+        span:nth-child(2){
+            font-size: 30px;
+            color:darkblue;
+
+            span{
+                font-size: 30px;
+                color:rgb(0, 161, 0);
+            }
+        }
+    }
+
+    >div:not(:first-child){
+        border:2px solid black;
+        padding:10px 10px;
+        font-size: 30px;
+        display:flex;
+        justify-content: space-between;
+
+        &:not(:last-child){
+            margin-bottom: 15px;
+            
+        }
+        >span{
+            span{
+                color:rgb(0, 161, 0);
+            }
+        }
+    }
+}

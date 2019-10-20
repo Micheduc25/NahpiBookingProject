@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+
+
+.page-body{
+
+    padding-top:30px;
+    width:100%;
+
+    .user-form{
+
+        margin:auto;
+
+        width:40%;
+
+        div{
+            width:100%;
+
+            
+        }
+
+        div:not(:last-child){
+            margin-bottom: 25px;
+            input{
+                border:1px solid #ccc;
+                padding:8px;
+                font-size: 18px;
+                width:100%;
+            }
+        }
+
+        div:last-child{
+
+            input{
+                border:none;
+                width:100%;
+                background-color:green;
+                color:white;
+                padding:8px;
+                cursor:pointer;
+                transition:background-color .2s;
+                font-size: 18px;
+
+                &:hover{
+                    background:rgb(3, 180, 3);
+                }
+            }
+        }
+    }
+}
+
+

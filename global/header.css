@@ -1,0 +1,49 @@
+.page-header {
+  width: 100%;
+}
+.page-header .page-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.page-header .page-navigation div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.page-header .page-navigation div:nth-child(1) .bus-ticket {
+  margin-right: 50px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.page-header .page-navigation div:nth-child(1) .bus-ticket span {
+  color: teal;
+}
+.page-header .page-navigation div:nth-child(1) .menuIcon {
+  color: black;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.page-header .page-navigation div:nth-child(1) .menuIcon svg {
+  height: 30px;
+  width: 30px;
+}
+.page-header .page-navigation div:nth-child(2) {
+  height: 100%;
+}
+.page-header .page-navigation div:nth-child(2) button {
+  border: none;
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.page-header .page-navigation div:nth-child(2) button:hover {
+  background: rgba(0, 0, 0, 0.247);
+}
+
+/*# sourceMappingURL=header.css.map */

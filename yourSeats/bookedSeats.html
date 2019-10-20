@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bookedSeats.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.10.1-web/css/all.css">
+    <link rel="stylesheet" href="../global/user_header.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="user-header">
+
+        <nav class="user-navigation">
+            <a href="#">Home</a>
+            <a href="#">Schedule</a>
+            <div class="account">
+                <a href="#" onclick="showPopup();">
+                    My Account
+                </a>
+                <div id="account-menu" class="account-drop-down">
+                    <div> <a href="#"> Admin</a></div>
+                    <div> <a href="#"> My Tickets</a></div>
+                    <div> <a href="#"> Logout </a></div>
+                </div>
+            </div>
+            <a href="#">Visit Site</a>
+        </nav>
+
+        <div class="lower-header">
+            <div>Your Booked Seats</div>
+            <div><a href="#">
+                    <span> Home</span> / About Us
+                </a></div>
+        </div>
+
+    </header>
+
+    <section class="page-body">
+        <div class="title">
+            Seats Purchased By You
+        </div>
+
+        <!-- This table will be generated with php, the values below are just for test purposes -->
+        <table>
+            <!-- The table will have to be generated here -->
+            <thead>
+                <tr>
+                    <th>Ticket Number</th>
+                    <th>Route</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Seats</th>
+                    <th>Cost</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+
+
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+
+    </section>
+
+
+    <footer class="user-footer">
+
+        <i class="far fa-copyright"></i> &nbsp; Copyright NAHPI 2019. All rights reserved
+
+    </footer>
+
+    <script>
+
+        function showPopup() {
+            document.getElementById("account-menu").classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>

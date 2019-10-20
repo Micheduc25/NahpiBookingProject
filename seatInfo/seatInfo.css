@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-body {
+  background: #ccc;
+  display: flex;
+}
+.page-body .main-section {
+  width: 82%;
+  padding-left: 20px;
+}
+@media (max-width: 700px) {
+  .page-body .main-section {
+    width: 100%;
+    margin: auto;
+    padding-left: 0;
+  }
+}
+.page-body .main-section .title {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.page-body .main-section .sub-title {
+  font-size: 20;
+}
+.page-body .main-section .bus-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.page-body .main-section .bus-layout div {
+  color: white;
+  background-color: teal;
+  padding: 30px;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.page-body .main-section .bus-layout div:hover {
+  background-color: #05acac;
+}
+.page-body .main-section .bus-layout div.selected {
+  background-color: red;
+}
+
+.space-out {
+  margin-left: 40px;
+}
+
+/*# sourceMappingURL=seatInfo.css.map */

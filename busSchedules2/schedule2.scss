@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.page-body{
+    padding-top:30px;
+    width:80%;
+    margin:auto;
+    min-height: 60vh;
+
+    .title{
+        font-size: 25px;
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .upper{
+        display: flex;
+        justify-content: space-between;
+        margin-top:30px;
+        margin-bottom: 50px;
+
+
+        .next{
+            div:first-child{
+                font-size: 14px;
+            }
+            div{
+                a:link,a:visited{
+                    text-decoration:none;
+                    color:white;
+                    padding:20px 30px;
+                    background:green;
+                    text-align: center;
+                    border-radius: 5px;
+                    display:block;
+                }
+            }
+        }
+    }
+
+
+    
+    .bus-layout{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top:40px;
+
+        div{
+            color:white;
+            background-color: teal;
+            padding:20px 0;
+            width:18%;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            cursor:pointer;
+            transition:.2s;
+            &:hover{
+                background-color: rgb(5, 172, 172);
+            }
+
+            
+        }
+
+        div.selected{
+            background-color: red;
+        }
+    }
+}
+
+.account{
+    position:relative;
+    display: block;
+     >div.account-drop-down{
+         display: none;
+        background:white;
+        
+        position: absolute;
+        top:100%;
+        padding:20px;
+        border:1px solid #ccc;
+
+        >div{
+            a{
+                color:black !important;
+
+                &:hover{
+                    color:white !important;
+                }
+            }
+        }
+    }
+
+    >div.account-drop-down.show{
+        display:block;
+    }
+
+   
+}
+
+.space-out{
+    margin-left:40px;
+}

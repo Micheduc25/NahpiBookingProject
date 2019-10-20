@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ticket-body {
+  padding: 30px;
+  border: 2px solid black;
+  width: 70%;
+  background: #f7f6f6;
+}
+.ticket-body .heading {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+.ticket-body .heading span:nth-child(1) {
+  background-image: url(./adminbg.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  font-size: 40px;
+  font-family: comic sans ms;
+  color: transparent;
+  background-position: center;
+}
+.ticket-body .heading span:nth-child(2) {
+  font-size: 30px;
+  color: darkblue;
+}
+.ticket-body .heading span:nth-child(2) span {
+  font-size: 30px;
+  color: #00a100;
+}
+.ticket-body > div:not(:first-child) {
+  border: 2px solid black;
+  padding: 10px 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-body > div:not(:first-child):not(:last-child) {
+  margin-bottom: 15px;
+}
+.ticket-body > div:not(:first-child) > span span {
+  color: #00a100;
+}
+
+/*# sourceMappingURL=ticket.css.map */

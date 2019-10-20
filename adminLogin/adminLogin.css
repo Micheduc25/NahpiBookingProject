@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-image: url(adminbg.jpg);
+  background-size: cover;
+}
+
+.login-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form .heading_container {
+  margin-bottom: 70px;
+  width: 100%;
+}
+.login-form .heading_container h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.login-form .login-body {
+  color: white;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.301);
+}
+.login-form .login-body .form-title {
+  padding-top: 20px;
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+@media (max-width: 865px) {
+  .login-form .login-body .form-title {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.login-form .login-body .form-title .form-title-left {
+  width: 80%;
+}
+.login-form .login-body .form-title .form-title-left div:nth-child(1) {
+  margin-bottom: 10px;
+}
+.login-form .login-body .form-title .form-title-right {
+  width: 20%;
+  justify-content: flex-end;
+  display: flex;
+}
+.login-form .login-body .form-title .form-title-right .circle {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background: black;
+  margin-right: 0;
+}
+.login-form .login-body .username {
+  width: 95%;
+  margin: auto;
+  padding: 10px 0;
+}
+.login-form .login-body .username input {
+  width: 100%;
+  border: none;
+  padding: 20px 5px;
+  font-size: 18px;
+}
+.login-form .login-body .password {
+  width: 95%;
+  margin: auto;
+  padding: 10px 0;
+}
+.login-form .login-body .password input {
+  width: 100%;
+  border: none;
+  padding: 20px 5px;
+  font-size: 18px;
+}
+.login-form .login-body .submit {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.login-form .login-body .submit input {
+  width: 120px;
+  height: 60px;
+  border: none;
+  background: #0077ff;
+  color: white;
+}
+
+/*# sourceMappingURL=adminLogin.css.map */

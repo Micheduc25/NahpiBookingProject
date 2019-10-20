@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+.page-body{
+
+    padding:30px;
+    min-height: 59vh;
+     .title{
+        font-size: 25px;
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+     table{
+            width:100%;
+            font-size: 13px;
+            border-collapse: collapse;
+            
+
+            td{
+                padding:10px 5px;
+            }
+            
+            
+    tbody{
+        tr:nth-child(even){
+                background: #ccc;
+
+            }
+
+
+
+            }
+            td{
+                text-align: left;
+
+                button{
+                    border:none;
+                    background-color:rgb(1, 160, 1);
+                    color:white;
+                    padding:5px;
+                    border-radius:3px;
+                    cursor:pointer;
+                    transition:.2s;
+
+                    &:hover{
+                        background:rgb(3, 187, 3);
+                    }
+
+                  
+                }
+               
+                
+            }
+            th{
+                text-align: left;
+                 padding:10px 5px;
+
+            }
+
+            thead{
+                tr{
+                    background:#ccc;
+                }
+            }
+
+
+        }
+}

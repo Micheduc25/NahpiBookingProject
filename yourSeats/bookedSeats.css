@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-body {
+  padding: 30px;
+  min-height: 59vh;
+}
+.page-body .title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page-body table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+.page-body table td {
+  padding: 10px 5px;
+}
+.page-body table tbody tr:nth-child(even) {
+  background: #ccc;
+}
+.page-body table td {
+  text-align: left;
+}
+.page-body table td button {
+  border: none;
+  background-color: #01a001;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.page-body table td button:hover {
+  background: #03bb03;
+}
+.page-body table th {
+  text-align: left;
+  padding: 10px 5px;
+}
+.page-body table thead tr {
+  background: #ccc;
+}
+
+.account {
+  position: relative;
+  display: block;
+}
+.account > div.account-drop-down {
+  display: none;
+  background: white;
+  position: absolute;
+  top: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.account > div.account-drop-down > div a {
+  color: black !important;
+}
+.account > div.account-drop-down > div a:hover {
+  color: white !important;
+}
+.account > div.account-drop-down.show {
+  display: block;
+}
+
+/*# sourceMappingURL=bookedSeats.css.map */
